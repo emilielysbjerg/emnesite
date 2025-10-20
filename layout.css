@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Forside start */
+.forside {
+  display: grid;
+}
+.image-container {
+  display: flex;
+  width: 100; /* Fylder hele skærmens bredde */
+  height: 100vh; /* Fylder hele skærmens højde (kan justeres) */
+  width: 50vw; /* Hver tager halvdelen af bredden */
+  height: 100%; /* Fylder containerens højde */
+  object-fit: cover; /* Beskær billedet så det fylder uden at strække */
+}
+/* Forside slut */
+
+/* Materialer start */
+.materialer_1 {
+  text-align: center; /* Centrerer overskrift og tekst */
+  margin: 0 auto;
+  max-width: 1200px; /* Giver lidt kontrol over bredden */
+  padding: 2rem 1rem;
+}
+
+.materialer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 billeder pr. række */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Afstand mellem billeder */
+  margin-bottom: 2rem; /* Giver luft inden teksten starter */
+}
+
+.materialer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-self: stretch;
+  padding: 0;
+}
+
+.cotton_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    align-self: stretch;
+    margin: 0;
+  }
+}
+
+.cotton_text {
+  margin-top: 10px;
+}
+
+/* Materialer slut */
+
+/* Naturlige Materialer start */
+.uld {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+}
+
+.bomuld {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  gap: 10px;
+  padding-bottom: 70px;
+  place-self: start;
+}
+
+.hør {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  place-self: start;
+}
+
+.silke {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  place-self: start;
+}
+.cashmere {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  place-self: start;
+}
+
+/* Naturlige Materialer slut */
+
+/* Desktop start */
+@media (min-width: 500px) {
+  /* Materialer starter */
+  .bæredygtihed_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    img {
+      grid-row: 1 / span 2;
+      grid-column: 2;
+    }
+  }
+
+  .bæredygtihed_2_2 {
+    grid-column: 1;
+    grid-row: 1 / span 1;
+    place-self: start;
+  }
+
+  .materialer_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .materialer_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Materialer slutter */
+
+  /* Naturlige materialer starter */
+
+  .uld {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 110px;
+  }
+
+  .bomuld {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 110px;
+  }
+
+  .hør {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 110px;
+  }
+
+  .silke {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 110px;
+  }
+  .cashmere {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 110px;
+  }
+  /* Natuerlige materialer slut */
+}
+/* Desktop slut */

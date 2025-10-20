@@ -6,62 +6,94 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Emnesite</title>
     <link rel="stylesheet" href="generel.css" />
+    <link rel="stylesheet" href="layout.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="billeder/favicon_96x96.svg" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="billeder/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="materialer.html">Materialer</a></li>
+          <li><a href="tekstilguide.html">Tekstil guide</a></li>
+          <li><a href="bæredygtighed.html">Bæredygtighed</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
     <main>
-      <div class="naturlige.materialer">
-        <div>
-          <h1>Materialer</h1>
+      <h1>Materialer</h1>
+      <section class="materialer_1">
+        <h2>Naturlige materialer</h2>
+        <div class="materialer">
+          <img src="billeder/wool.webp" alt="wool" class="img_1" />
+          <img src="billeder/silke.webp" alt="silke" class="img_2" />
+          <img src="billeder/linen_hør.webp" alt="linen" class="img_3" />
+          <div class="cotton_container">
+            <img src="billeder/cotton.webp" alt="cotton" class="img_4" />
+            <div class="cotton_text">
+              <p>
+                Naturlige tekstilmaterialer kommer fra planter og dyr, f.eks.
+                bomuld, hør, uld og silke. De er åndbare, behagelige mod huden
+                og ofte mere miljøvenlige, da de kan nedbrydes naturligt. Mange
+                naturlige fibre er også gode til at absorbere fugt og regulere
+                varme.
+              </p>
+              <a href="naturlige_materialer.html">
+                Læs mere om naturlige materialer her</a
+              >
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>Naturlige materialer</h2>
+      </section>
+      <section class="materialer_2">
+        <div class="syntetiske_materialer">
+          <h2>Syntetiske materialer</h2>
+          <img src="billeder/polyseter.webp" alt="polyester" class="img_6" />
+          <img src="billeder/elastan.webp" alt="elastan" class="img_7" />
           <p>
-            Naturlige tekstilmaterialer kommer fra planter og dyr, f.eks.
-            bomuld, hør, uld og silke. De er åndbare, behagelige mod huden og
-            ofte mere miljøvenlige, da de kan nedbrydes naturligt. Mange
-            naturlige fibre er også gode til at absorbere fugt og regulere
-            varme.
+            Syntetiske materialer i tekstiler er kunstigt fremstillede fibre,
+            som for eksempel polyester, nylon og akryl. De laves oftest af olie
+            eller andre kemiske stoffer og bruges, fordi de er slidstærke,
+            billige at producere og nemme at vedligeholde. Tekstiler af
+            syntetiske materialer tørrer hurtigt og krøller sjældent, men de er
+            mindre åndbare end naturlige fibre og kan afgive mikroplast til
+            miljøet ved vask.
           </p>
-          <p>Læs mere om naturlige materialer her</p>
+          <p>Læs mere om syntetiske materialer her</p>
         </div>
-      </div>
-      <div class="syntetiske.materialer">
-        <h2>Syntetiske materialer</h2>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <p>
-          Syntetiske materialer i tekstiler er kunstigt fremstillede fibre, som
-          for eksempel polyester, nylon og akryl. De laves oftest af olie eller
-          andre kemiske stoffer og bruges, fordi de er slidstærke, billige at
-          producere og nemme at vedligeholde. Tekstiler af syntetiske materialer
-          tørrer hurtigt og krøller sjældent, men de er mindre åndbare end
-          naturlige fibre og kan afgive mikroplast til miljøet ved vask.
-        </p>
-        <p>Læs mere om syntetiske materialer her</p>
-      </div>
-      <div class="regeneret.materialer">
-        <h2>Re-generet materialer</h2>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <p>
-          Regenererede tekstilmaterialer er fibre, der laves af naturlige
-          råstoffer, men som bearbejdes kemisk, så de får nye egenskaber. Et
-          eksempel er viskose, som fremstilles af cellulose fra træ. Disse
-          materialer føles ofte bløde og behagelige som naturlige fibre, men kan
-          produceres i større mængder og tilpasses bestemte behov. Dog kan
-          fremstillingsprocessen være ressourcekrævende og påvirke miljøet,
-          afhængigt af hvilke kemikalier og metoder der bruges.
-        </p>
-        <p>Læs mere om re-generet materialer her</p>
-      </div>
+      </section>
+      <section class="materialer_3">
+        <div class="regeneret_materialer">
+          <h2>Re-generet materialer</h2>
+          <img src="billeder/viskose_rayon.webp" alt="viskose" class="img_8" />
+          <img src="billeder/lyocell_tencel.webp" alt="lyocell" class="img_9" />
+          <p>
+            Regenererede tekstilmaterialer er fibre, der laves af naturlige
+            råstoffer, men som bearbejdes kemisk, så de får nye egenskaber. Et
+            eksempel er viskose, som fremstilles af cellulose fra træ. Disse
+            materialer føles ofte bløde og behagelige som naturlige fibre, men
+            kan produceres i større mængder og tilpasses bestemte behov. Dog kan
+            fremstillingsprocessen være ressourcekrævende og påvirke miljøet,
+            afhængigt af hvilke kemikalier og metoder der bruges.
+          </p>
+          <p>Læs mere om re-generet materialer her</p>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
